@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
-import {SubscribeForm} from './components/subscribe-form/subscribe-form';
+import { RouterOutlet } from '@angular/router';
+import { Navbar } from './components/navbar/navbar';
 
 @Component({
   selector: 'app-root',
-  imports: [SubscribeForm],
+  standalone: true,
+  imports: [RouterOutlet, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
