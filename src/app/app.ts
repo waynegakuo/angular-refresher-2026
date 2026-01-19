@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {SubscribeForm} from './components/subscribe-form/subscribe-form';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [SubscribeForm],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
