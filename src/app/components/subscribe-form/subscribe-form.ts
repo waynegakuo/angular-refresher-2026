@@ -1,10 +1,11 @@
 import {Component, effect, signal} from '@angular/core';
 import {initialData, Subscription, subscriptionSchema} from '../../models/subscription.model';
 import {form, FormField} from '@angular/forms/signals';
+import {CautionMessageDirective} from '../../directives/caution-message.directive';
 
 @Component({
   selector: 'app-subscribe-form',
-  imports: [FormField],
+  imports: [FormField, CautionMessageDirective],
   templateUrl: './subscribe-form.html',
   styleUrl: './subscribe-form.scss',
 })

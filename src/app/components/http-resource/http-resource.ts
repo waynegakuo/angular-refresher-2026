@@ -1,11 +1,13 @@
 import {Component, inject} from '@angular/core';
 import {VehicleService} from '../../services/vehicle.service';
 import {FormsModule} from '@angular/forms';
+import {CautionMessageDirective} from '../../directives/caution-message.directive';
 
 @Component({
   selector: 'app-http-resource',
   imports: [
-    FormsModule
+    FormsModule,
+    CautionMessageDirective
   ],
   templateUrl: './http-resource.html',
   styleUrl: './http-resource.scss',
