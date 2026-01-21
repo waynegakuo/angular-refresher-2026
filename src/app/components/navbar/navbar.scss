@@ -42,6 +42,7 @@
         padding: 0.5rem 0;
         position: relative;
         transition: color 0.3s ease;
+        margin-right: 2rem;
 
         &::after {
           content: '';
@@ -64,6 +65,10 @@
           &::after {
             width: 100%;
           }
+        }
+
+        &:last-child{
+          margin-right: 0;
         }
       }
     }
