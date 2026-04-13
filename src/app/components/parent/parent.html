@@ -1,4 +1,7 @@
-<app-child [title]="parentTitle" (titleChange)="parentTitleChanged($event)"></app-child>
-
-
-<app-child-2 [title]="parentTitle" (valueChanged)="parentTitleChanged($event)"></app-child-2>
+<div class="parent-container">
+  <h2 class="parent-header">Parent Component</h2>
+  <div class="children-wrapper">
+    <app-child [title]="parentTitle" (titleChange)="parentTitleChanged($event)"></app-child>
+    <app-child-2 [title]="parentTitle" (valueChanged)="parentTitleChanged($event)"></app-child-2>
+  </div>
+</div>

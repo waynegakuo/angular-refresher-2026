@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, output, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, input, output, Output } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 
 @Component({
@@ -6,9 +6,10 @@ import { FormsModule } from "@angular/forms";
   imports: [FormsModule],
   templateUrl: './child.html',
   styleUrl: './child.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Child {
-  @Input() title: string = '';
+  title = input<string>('');
 
   updatedTitle: string = '';
   newTitle: string = '';

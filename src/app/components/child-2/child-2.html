@@ -1,4 +1,8 @@
-
-<h1>Updating Parent Title using the new output function</h1>
-<input type="text" name="titleInput" [(ngModel)]="newTitle">
-<button (click)="updateTitle()">Update Title</button>
+<div class="child2-container">
+  <h2 class="child2-header">Child 2 Component</h2>
+  <h3 class="child2-heading">Updating Parent Title using the new output function</h3>
+  <div class="child2-form">
+    <input type="text" name="titleInput" [(ngModel)]="newTitle" placeholder="Enter new title..." aria-label="Update parent title">
+    <button (click)="updateTitle()">Update Title</button>
+  </div>
+</div>

@@ -1,5 +1,9 @@
-<p>{{ title }}</p>
-
-<h1>Updating Parent Title using the old Outptut()</h1>
-<input type="text" name="titleInput" [(ngModel)]="updatedTitle">
-<button (click)="changeTitle()">Change Title</button>
+<div class="child-container">
+  <h2 class="child-header">Child Component</h2>
+  <p class="child-title">{{ title() }}</p>
+  <h3 class="child-heading">Updating Parent Title using the old Output()</h3>
+  <div class="child-form">
+    <input type="text" name="titleInput" [(ngModel)]="updatedTitle" placeholder="Enter new title..." aria-label="Update parent title">
+    <button (click)="changeTitle()">Change Title</button>
+  </div>
+</div>

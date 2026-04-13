@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.parent-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f0f4ff;
+  border: 2px solid #4a6cf7;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(74, 108, 247, 0.15);
+}
+
+.parent-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a6cf7;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #c7d2fe;
+}
+
+.children-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
