@@ -1,9 +1,11 @@
 import { Routes } from '@angular/router';
 import { SubscribeForm } from './components/subscribe-form/subscribe-form';
 import {HttpResource} from './components/http-resource/http-resource';
+import {Parent} from './components/parent/parent';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'signal-forms', pathMatch: 'full' },
   { path: 'signal-forms', component: SubscribeForm, title: 'Angular Refresher | Signal Forms' },
-  {path: 'http-resource', component: HttpResource, title: 'Angular Refresher | HTTP Resource'}
+  { path: 'http-resource', component: HttpResource, title: 'Angular Refresher | HTTP Resource' },
+  { path: 'parent', component: Parent, title: 'Angular Refresher | Parent Component' }
 ];
