@@ -16,7 +16,6 @@ export class Parent {
   parentTitle: string = 'This is information from the parent component';
 
   parentTitleChanged(updatedTitle: string) {
-    // const target = event.target as HTMLInputElement;
     this.parentTitle = updatedTitle;
   }
 }
